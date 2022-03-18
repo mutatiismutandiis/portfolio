@@ -1,0 +1,21 @@
+.row{
+    background-color: #5D8AA8;
+    padding: 20px;
+}
+.contenedor{
+    width: auto;
+    padding: 20px;
+}
+.parte1, .parte2, .parte3, .parte4, .parte5, .parte6 {
+    display: inline-block;
+    text-align: justify;
+}
+.img-proyecto1{
+    box-shadow: 10px 10px 10px #8DD1FF;
+}
+.img-proyecto2{
+    box-shadow: 10px 10px 10px #8DD1FF;
+}
+.img-proyecto3{
+    box-shadow: 10px 10px 10px #8DD1FF;
+}
