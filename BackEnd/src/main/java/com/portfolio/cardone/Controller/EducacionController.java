@@ -54,4 +54,9 @@ public class EducacionController {
     iEducacionService.saveEducacion(educacion);
     return educacion;
     }
+    
+    @GetMapping("/educaciones/traer/perfil")
+    public Educacion findEducacion(){
+    return iEducacionService.findEducacion((long)1);
+            }
 }

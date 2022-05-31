@@ -53,4 +53,9 @@ public class ExperienciaController {
     iExperienciaService.saveExperiencia(experiencia);
     return experiencia;
     }
+    
+    @GetMapping("/experiencias/traer/perfil")
+    public Experiencia findExperiencia(){
+    return iExperienciaService.findExperiencia((long)1);
+            }
 }
