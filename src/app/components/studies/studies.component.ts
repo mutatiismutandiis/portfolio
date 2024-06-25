@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
+import { PageLayoutComponent } from '../page-layout/page-layout.component';
 
 @Component({
   selector: 'app-studies',
   standalone: true,
-  imports: [],
+  imports: [PageLayoutComponent],
   templateUrl: './studies.component.html',
-  styleUrl: './studies.component.scss'
+  styleUrl: './studies.component.scss',
 })
-export class StudiesComponent {
-
-}
+export class StudiesComponent {}

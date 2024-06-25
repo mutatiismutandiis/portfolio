@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-page-layout',
@@ -8,5 +9,9 @@ import { Component } from '@angular/core';
   styleUrl: './page-layout.component.scss'
 })
 export class PageLayoutComponent {
+  constructor(private router: Router) {}
 
+  navigateToMain() {
+    this.router.navigate(['/']);
+  }
 }
