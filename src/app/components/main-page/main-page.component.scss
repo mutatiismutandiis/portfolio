@@ -1,0 +1,121 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+
+  .photo-container,
+  .about-me-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .photo-container {
+    background-color: #f4f4f4;
+    text-align: center;
+
+    .profile-photo {
+      width: 250px;
+      height: 250px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-family: "Open Sans", sans-serif;
+      font-weight: bold;
+      font-size: 34px;
+      margin: 10px 0;
+    }
+
+    h2 {
+      font-family: "Open Sans", sans-serif;
+      font-size: 24px;
+      margin: 5px 0 20px;
+    }
+
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+
+      a {
+        color: black;
+        font-size: 32px;
+        text-decoration: none;
+
+        &:hover {
+          color: #1e1e1e;
+        }
+      }
+    }
+  }
+
+  .about-me-container {
+    background-color: white;
+    text-align: center;
+
+    .about-me-content {
+      width: 70%;
+      margin: 0 auto;
+      text-align: left;
+      padding-bottom: 20px;
+
+      h1 {
+        font-family: "Open Sans", sans-serif;
+        font-weight: bold;
+        font-size: 48px;
+        margin-bottom: 20px;
+      }
+
+      p {
+        font-family: "Open Sans", sans-serif;
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+    }
+
+    .buttons-container {
+      width: 40%;
+      margin: 20px auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+
+      button {
+        width: 100%;
+        padding: 10px;
+        font-family: "Open Sans", sans-serif;
+        font-size: 16px;
+        font-weight: bold;
+        color: white;
+        background-color: #2e2e2e;
+        border: none;
+        cursor: pointer;
+        margin: 0 auto;
+        text-align: center;
+
+        &:hover {
+          background-color: #1e1e1e;
+        }
+      }
+    }
+
+    @media (max-width: 768px) {
+      .about-me-content {
+        width: 90%;
+        padding: 0 20px;
+      }
+
+      .buttons-container {
+        width: 60%;
+      }
+    }
+  }
+}
