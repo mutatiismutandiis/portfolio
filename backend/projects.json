@@ -83,7 +83,7 @@
         "id": 10,
         "name": "Movies site",
         "description": "React",
-        "image": "/images/repo-cultural.png",
+        "image": "/images/netflix-clone.png",
         "repoLink": "https://github.com/euge-carr/clon-netflix",
         "deployLink": "https://clon-netflix-mauve.vercel.app/"
     }

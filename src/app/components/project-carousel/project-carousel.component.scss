@@ -1,0 +1,31 @@
+:host {
+  display: block;
+  width: 100%;
+  .mySwiper {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    @media (max-width: 1200px) {
+      width: 90%;
+    }
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
+  
+  swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+  }
+  
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: #000;
+  }
+}
+
