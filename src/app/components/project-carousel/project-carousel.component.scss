@@ -1,6 +1,10 @@
 :host {
+  --swiper-navigation-color: #2e2e2e;
+  --swiper-theme-color: #2e2e2e;
+
   display: block;
   width: 100%;
+
   .mySwiper {
     width: 80%;
     height: auto;
@@ -15,17 +19,11 @@
       width: 100%;
     }
   }
-  
+
   swiper-slide {
     display: flex;
     align-items: center;
     justify-content: center;
     height: auto;
   }
-  
-  .swiper-button-next,
-  .swiper-button-prev {
-    color: #000;
-  }
 }
-

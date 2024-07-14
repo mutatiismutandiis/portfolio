@@ -1,4 +1,4 @@
-<swiper-container class="mySwiper" loop="true" navigation>
+<swiper-container class="mySwiper" navigation>
   <swiper-slide *ngFor="let project of projects">
     <app-card
       [name]="project.name"
@@ -7,7 +7,7 @@
       [repoLink]="project.repoLink"
       [deployLink]="project.deployLink"
     >
-      ></app-card
-    >
+    </app-card>
   </swiper-slide>
+  <div class="swiper-pagination"></div>
 </swiper-container>
