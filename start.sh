@@ -5,4 +5,4 @@ node server.js &
 
 # Navigate back to the root and serve the Angular frontend
 cd ../dist/portfolio
-npx http-server -p 8080
+npx http-server -c-1 -p $PORT --proxy "http://localhost:$PORT?"
