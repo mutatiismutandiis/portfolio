@@ -1,0 +1,66 @@
+[
+    {
+        "id": 1,
+        "jobTitle": "Scrum Master",
+        "companyName": "HID Global",
+        "companyLogo": "/logos/hid-global.svg",
+        "companyLink": "https://www.hidglobal.com/",
+        "location": "Prague, Czech Republic",
+        "startDate": "16-10-2024",
+        "endDate": "",
+        "description": [],
+        "skills": [
+            "Scrum",
+            "Agile Methodologies",
+            "SAFe",
+            "Communication skills",
+            "Collaboration"
+        ]
+    },
+    {
+        "id": 2,
+        "jobTitle": "Scrum Master & Frontend Developer",
+        "companyName": "Buhler Group",
+        "companyLogo": "",
+        "companyLink": "https://www.buhlergroup.com/",
+        "location": "Prague, Czech Republic",
+        "startDate": "01-09-2022",
+        "endDate": "30-09-2024",
+        "description": [
+            "Scrum Master: Increased team productivity by 20% by facilitating Agile transformation and improving communication among cross-functional teams. Successfully onboarded and integrated 2 new team members, and managed the transition when 2 members left. Currently leading the Agile transformation of a new team. Actively participate in SAFe ART and lead the Scrum Master Community of Practice.",
+            "Frontend Developer: Maintained and enhanced HMI applications for one of the main business unit using HTML, CSS, JavaScript, and TypeScript. Implemented new features, performed code refactoring, and developed testing frameworks in Cypress to ensure application stability. Leading the migration of a major application to Angular."
+        ],
+        "skills": [
+            "Scrum",
+            "Agile Methodologies",
+            "SAFe",
+            "Communication skills",
+            "Collaboration",
+            "HTML",
+            "CSS/SCSS",
+            "JavaScript",
+            "TypeScript",
+            "Angular",
+            "Cypress"
+        ]
+    },
+    {
+        "id": 3,
+        "jobTitle": "IT Student Support",
+        "companyName": "Commerzbank",
+        "companyLogo": "",
+        "companyLink": "https://www.commerzbank.de/",
+        "location": "Prague, Czech Republic",
+        "startDate": "01-07-2022",
+        "endDate": "31-08-2022",
+        "description": [
+            "Proactive Development: Rewrote and optimized multiple SharePoint pages, enhancing the functionality and user experience of the company's internal systems.",
+            "Sharepoint Developer: develop and customize internal websites and applications, contributing to the improvement of internal workflows."
+        ],
+        "skills": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ]
+    }
+]

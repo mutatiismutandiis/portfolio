@@ -16,9 +16,9 @@ app.use(cors({
   origin: 'http://localhost:4200'
 }));
 
-// Middleware to serve images
+// Middleware to serve images and logos
 app.use('/images', express.static(path.join(__dirname, 'images')));
-
+app.use('/logos', express.static(path.join(__dirname, 'logos')));
 
 // Middleware to parse JSON
 app.use(express.json());

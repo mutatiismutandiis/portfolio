@@ -1,10 +1,9 @@
-
-import express from 'express';
-import projects from '../projects.json' assert { type: 'json' };
+import express from "express";
+import projects from "../projects.json" assert { type: "json" };
 
 const router = express.Router();
 
-router.get('/', (req, res) => {
+router.get("/", (req, res) => {
   res.json(projects);
 });
 

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { PageLayoutComponent } from '../page-layout/page-layout.component';
+import { PageLayoutComponent } from '../../layouts/page-layout/page-layout.component';
 
 @Component({
   selector: 'app-studies',

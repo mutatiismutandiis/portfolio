@@ -1,10 +1,9 @@
 import { Component, CUSTOM_ELEMENTS_SCHEMA, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { CardComponent } from '../card/card.component';
+import { CardComponent } from '../project-card/card.component';
 import { ProjectService } from '../../services/project.service';
 import Swiper from 'swiper';
 import { Navigation, Pagination } from 'swiper/modules';
-
 
 Swiper.use([Navigation, Pagination]);
 @Component({
