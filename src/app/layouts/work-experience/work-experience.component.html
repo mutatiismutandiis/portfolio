@@ -2,8 +2,11 @@
   <div class="mini-cards-container">
     <app-work-mini-card
       *ngFor="let job of jobs"
+      [id]="job.id"
       [title]="job.jobTitle"
       [date]="job.date"
-      [logo]="job.logo">></app-work-mini-card>
+      [logo]="job.logo"
+      (moreInfo)="openFullCard($event)">
+    </app-work-mini-card>
   </div>
 </app-page-layout>

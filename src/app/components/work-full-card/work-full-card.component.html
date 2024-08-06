@@ -1,1 +1,23 @@
-<p>work-full-card works!</p>
+<div class="full-card-container">
+  <button mat-icon-button class="close-button" (click)="onClose()">
+    <mat-icon>close</mat-icon>
+  </button>
+  <div class="content">
+    <div class="header">
+      <div class="details">
+        <h2>{{ job?.jobTitle }}</h2>
+        <h3>{{ job?.companyName }}</h3>
+        <p>{{ job?.date }}</p>
+      </div>
+      <div class="logo">
+        <img [src]="job?.companyLogo" alt="Company Logo" />
+      </div>
+    </div>
+    <div class="description">
+      <p *ngFor="let item of job?.description">{{ item }}</p>
+    </div>
+    <div class="skills">
+      <span *ngFor="let skill of job?.skills" class="skill">{{ skill }}</span>
+    </div>
+  </div>
+</div>

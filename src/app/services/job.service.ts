@@ -15,6 +15,10 @@ export class JobService {
     return this.httpClient.get<any[]>(`${this.apiUrl}/api/jobs`);
   }
 
+  getJobById(id: number): Observable<any> {
+    return this.httpClient.get<any>(`${this.apiUrl}/api/jobs/${id}`);
+  }
+
   getLogoUrl(logoPath: string): string {
     return `${this.apiUrl}${logoPath}`;
   }
