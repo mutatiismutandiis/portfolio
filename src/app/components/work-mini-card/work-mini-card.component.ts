@@ -8,7 +8,7 @@ import { Component, Input } from '@angular/core';
   styleUrl: './work-mini-card.component.scss'
 })
 export class WorkMiniCardComponent {
-  @Input() title!: string;
-  @Input() date!: string;
-  @Input() logo!: string;
+  @Input() title: string = '';
+  @Input() date: string = '';
+  @Input() logo: string = '';
 }

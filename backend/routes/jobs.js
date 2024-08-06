@@ -8,11 +8,11 @@ import { dirname } from "path";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-const projects = JSON.parse(fs.readFileSync(path.join(__dirname, "../projects.json"), "utf-8"));
+const jobs = JSON.parse(fs.readFileSync(path.join(__dirname, "../jobs.json"), "utf-8"));
 const router = express.Router();
 
 router.get("/", (req, res) => {
-  res.json(projects);
+  res.json(jobs);
 });
 
 export default router;

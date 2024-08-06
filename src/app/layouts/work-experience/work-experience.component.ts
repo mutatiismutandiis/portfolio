@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common'; 
 import { PageLayoutComponent } from '../../layouts/page-layout/page-layout.component';
 import { WorkMiniCardComponent } from '../../components/work-mini-card/work-mini-card.component';
+import { JobService } from '../../services/job.service';
 
 @Component({
   selector: 'app-work-experience',
@@ -11,12 +12,38 @@ import { WorkMiniCardComponent } from '../../components/work-mini-card/work-mini
   styleUrl: './work-experience.component.scss',
 })
 export class WorkExperienceComponent {
-  works = [
-    { title: 'Scrum Master & Frontend Developer', date: 'Sept 2022 - Sept 2024', logo: "/assets/images/buhler.png" },
-    { title: 'Teacher Assistant', date: 'March 2015 - June 2022', logo: "/assets/images/unr.png" },
-    { title: 'Scrum Master & Frontend Developer', date: 'Sept 2022 - Sept 2024', logo: "/assets/images/hid-global.svg" },
-    { title: 'Teacher Assistant', date: 'March 2015 - June 2022', logo: "/assets/images/conicet.png" },
-    { title: 'Scrum Master & Frontend Developer', date: 'Sept 2022 - Sept 2024', logo: "/assets/images/utn.png" },
-    { title: 'Teacher Assistant', date: 'March 2015 - June 2022', logo: "/assets/images/commerzbank.png" }
-  ];
+
+  jobs: any[] = [];
+
+  constructor(private jobService: JobService) {}
+
+  ngOnInit(): void {
+    this.jobService.getJobs().subscribe(
+      (data) => {
+        this.jobs = data.map(job =>{
+          return {
+            ...job,
+            date: this.formatDate(job.startDate, job.endDate),
+            logo: this.getLogoUrl(job.companyLogo)
+          };
+        });
+      },
+      (error) => {
+        console.error('Error fetching jobs:', error);
+      }
+    );
+  }
+
+  formatDate(startDate: string, endDate: string): string {
+    if (endDate === "") {
+      return `Since ${startDate}`;
+    } else {
+      return `${startDate} - ${endDate}`;
+    }
+  }
+
+  getLogoUrl(logoPath: string): string {
+    return this.jobService.getLogoUrl(logoPath);
+  }
 }
+

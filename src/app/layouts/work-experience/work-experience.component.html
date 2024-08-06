@@ -1,10 +1,9 @@
 <app-page-layout>
   <div class="mini-cards-container">
-    <app-work-mini-card 
-    *ngFor="let work of works"
-    [title]="work.title"
-    [date]="work.date"
-    [logo]="work.logo"
-    ></app-work-mini-card>
+    <app-work-mini-card
+      *ngFor="let job of jobs"
+      [title]="job.jobTitle"
+      [date]="job.date"
+      [logo]="job.logo">></app-work-mini-card>
   </div>
 </app-page-layout>
