@@ -35,6 +35,7 @@ export class WorkExperienceComponent {
             ...job,
             date: this.formatDate(job.startDate, job.endDate),
             logo: this.getLogoUrl(job.companyLogo),
+            companyLink: job.companyLink
           }));
         })
       )

@@ -1,5 +1,7 @@
 <div class="card">
-  <img class="card-img-top" [src]="logo" alt="Company Logo">
+  <a *ngIf="companyLink" [href]="companyLink" target="_blank" rel="noopener noreferrer">
+    <img class="card-img-top" [src]="logo" alt="Company Logo">
+    </a>
   <div class="card-body">
     <h5 class="card-title"> {{ title }}</h5>
     <p class="card-text"> {{ date }}</p>
