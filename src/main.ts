@@ -12,6 +12,6 @@ bootstrapApplication(AppComponent, {
   ...appConfig,
   providers: [
     ...appConfig.providers,
-    provideHttpClient(), provideAnimationsAsync()
+    provideHttpClient(), provideAnimationsAsync(), provideAnimationsAsync()
   ]
 }).catch((err) => console.error(err));

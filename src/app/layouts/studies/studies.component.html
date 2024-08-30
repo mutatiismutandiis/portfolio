@@ -1,3 +1,32 @@
 <app-page-layout>
-  <p>Site under construction 👷🏽‍♀️</p>
+  <div class="accordion-container" *ngIf="studies.length > 0; else loading">
+    <!-- First accordion for the categories -->
+    <mat-accordion class="category-accordion">
+      <mat-expansion-panel *ngFor="let category of studies">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            {{ category.category }}
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+
+        <!-- Second accordion for the items titles -->
+        <mat-accordion class="item-accordion">
+          <mat-expansion-panel *ngFor="let item of category.items">
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                {{ item.title }}
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <div>
+              <p> Aquí tenemos que insertar la card con los detalles </p>
+            </div>
+          </mat-expansion-panel>
+        </mat-accordion>
+      </mat-expansion-panel>
+    </mat-accordion>
+  </div>
+
+  <ng-template #loading>
+    <p>Loading studies data...</p>
+  </ng-template>
 </app-page-layout>

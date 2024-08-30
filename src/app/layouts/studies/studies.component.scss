@@ -1,0 +1,31 @@
+.accordion-container {
+  width: 90%;
+  height: 90%;
+
+  // Styles for the First accordion (Categories)
+  .category-accordion {
+    mat-expansion-panel {
+      margin-bottom: 1rem;
+    }
+
+    mat-panel-title {
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+  }
+
+  // Styles for the Second accordion (Items)
+  .item-accordion {
+    background-color: #f4f4f4;
+
+    mat-expansion-panel {
+      margin-bottom: 1rem;
+      background-color: #f4f4f4;
+    }
+
+    mat-panel-title {
+      font-size: 1rem;
+      font-weight: normal;
+    }
+  }
+}

@@ -1,0 +1,221 @@
+[
+  {
+    "category": "Higher Education",
+    "items": [
+      {
+        "title": "Master of Science (Data and System Sciences, specialization in IT Project Management)",
+        "institution": "Stockholm University",
+        "careerSite": "https://www.su.se/english/search-courses-and-programmes/sprom-1.413331",
+        "location": "Online",
+        "startDate": "09/2024",
+        "incomplete": true,
+        "incompleteReason": "In progress",
+        "description": "Currently pursuing a Master's degree focused on managing IT projects, with coursework covering project management methodologies, agile practices, and leadership in technology.",
+        "details": [
+          {
+            "title": "Current Focus",
+            "content": [
+              "Project Management Methodologies",
+              "Agile Practices",
+              "Leadership in Technology"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "PhD in Engineering (Applied Mathematics)",
+        "institution": "National University of Rosario",
+        "careerSite": "https://posgrado.fceia.unr.edu.ar/carreras/doctorados/9-doctorado-en-ingenieria.html",
+        "location": "Rosario, Argentina",
+        "startDate": "04/2019",
+        "endDate": "06/2022",
+        "incomplete": true,
+        "incompleteReason": "Pending thesis",
+        "description": "Engaged in advanced coursework and research in applied mathematics. Attended conferences and collaborated on research projects.",
+        "details": [
+          {
+            "title": "Research and Projects",
+            "content": [
+              "Collaborated on applied mathematics research projects.",
+              "Published several research papers."
+            ]
+          },
+          {
+            "title": "Activities and Societies",
+            "content": [
+              "Advanced coursework and seminars in engineering.",
+              "Participation in conferences and workshops.",
+              "Programming in Python and Matlab",
+              "Writing scientific papers in LateX"
+            ]
+          },
+          {
+            "title": "Publications",
+            "content": [
+              "https://www.sciencedirect.com/science/article/abs/pii/S0005109821002624",
+              "https://www.conicet.gov.ar/new_scp/detalle.php?keywords=&id=20631&inst=yes&congresos=yes&detalles=yes&congr_id=9759068",
+              "https://arxiv.org/abs/1907.11673"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Bachelor of Mathematics",
+        "institution": "National University of Rosario",
+        "careerSite": "https://web.fceia.unr.edu.ar/es/profesorado-de-matem%C3%A1tica.html",
+        "location": "Rosario, Argentina",
+        "startDate": "03/2014",
+        "endDate": "03/2017",
+        "certificate": "https://drive.google.com/file/d/1-WVyvrEBxaMl4iR8CcFvzRDR-N6etpJr/view?usp=sharing",
+        "description": "Graduated with honors in a four years programme, ranked first in class for academic performance. Completed internships in mathematics education and authored a final project on the subject.",
+        "details": [
+          {
+            "title": "Achievements",
+            "content": [
+              "Best Average Grade Award: 8.81",
+              "Ranked First in Class"
+            ]
+          },
+          {
+            "title": "Activities and Societies",
+            "content": [
+              "Professional internships in mathematics education.",
+              "Research and final project on mathematics education.",
+              "Writing academic papers in LateX"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "IT Courses",
+    "items": [
+      {
+        "title": "Diploma in Data Science",
+        "institution": "Data Science Institute Argentina",
+        "institutionSite": "https://institutodatascience.org/diplomatura-en-ciencia-de-datos-con-r-y-python/",
+        "location": "Online",
+        "startDate": "05/2022",
+        "incomplete": true,
+        "incompleteReason": "Pending Final Project",
+        "description": "Comprehensive training in data analysis, machine learning, and artificial intelligence.",
+        "skills": [
+          "Data Analysis",
+          "Machine Learning",
+          "Artificial Intelligence",
+          "Python",
+          "R"
+        ]
+      },
+      {
+        "title": "Frontend Development using React",
+        "institution": "Government of the city of Buenos Aires",
+        "institutionSite": "https://buenosaires.gob.ar/educacion/codocodo/el-programa",
+        "location": "Online",
+        "startDate": "03/2023",
+        "endDate": "07/2023",
+        "certificate": "https://drive.google.com/file/d/1jADVc8mzLYnPTLEPTvTW7Rzo2-7_Ky5H/view?usp=sharing",
+        "description": "Focused on building modern, responsive web applications using React.",
+        "skills": [
+          "React Components",
+          "State Management",
+          "Responsive Design",
+          "React",
+          "JavaScript"
+        ]
+      },
+      {
+        "title": "Training in Data and AI",
+        "institution": "Government of Argentina",
+        "institutionSite": "https://www.argentina.gob.ar/economia/conocimiento/argentina-programa",
+        "location": "Online",
+        "startDate": "08/2023",
+        "endDate": "09/2023",
+        "certificate": "https://drive.google.com/file/d/1EnQZE8KKA3Zzrk0rtR5L8LqFTystQPZ5/view?usp=sharing",
+        "description": "",
+        "skills": ["AI", "Data Analysis", "Machine Learning", "Python"]
+      },
+      {
+        "title": "Fullstack PHP",
+        "institution": "Government of the city of Buenos Aires",
+        "institutionSite": "https://buenosaires.gob.ar/educacion/codocodo/el-programa",
+        "location": "Online",
+        "startDate": "08/2022",
+        "endDate": "12/2022",
+        "certificate": "https://drive.google.com/file/d/1erlyYta2k6m78DmfI18N5G6fn9E6YuuC/view?usp=sharing",
+        "description": "Comprehensive training in full-stack web development with a focus on PHP.",
+        "skills": [
+          "Frontend Integration",
+          "Database Integration",
+          "HTML",
+          "CSS",
+          "Bootstrap",
+          "JavaScript",
+          "SQL",
+          "PHP"
+        ]
+      },
+      {
+        "title": "Fullstack Jr.",
+        "institution": "Government of Argentina",
+        "institutionSite": "https://www.argentina.gob.ar/economia/conocimiento/argentina-programa",
+        "location": "Online",
+        "startDate": "08/2021",
+        "endDate": "12/2021",
+        "certificate": "https://drive.google.com/file/d/1hyX-Ukg4mSv8Lrj1UImMLRmqZvZocTxl/view?usp=sharing",
+        "description": "Basic training in full-stack web development using Angular for the frontend and Java for the backend.",
+        "skills": [
+          "Responsive Design",
+          "HTML",
+          "CSS",
+          "Bootstrap",
+          "TypeScript",
+          "SQL",
+          "Java"
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Certifications",
+    "items": [
+      {
+        "title": "SAFe Scrum Master",
+        "institution": "Scaled Agile, Inc.",
+        "institutionSite": "https://scaledagile.com/",
+        "location": "Online",
+        "date": "07/2023",
+        "certificate": "https://www.credly.com/badges/4b3ecc0a-bd04-40a0-af2d-aa3514f389d6/linked_in_profile",
+        "description": "Certification in scaled agile frameworks, focusing on using Scrum and Kanban to facilitate team events, supporting program execution, and coaching Agile teams.",
+        "skills": [
+          "Scaled Agile Frameworks",
+          "Team Facilitation",
+          "Program Execution",
+          "Agile Teams",
+          "PI Planning"
+        ]
+      },
+      {
+        "title": "Professional Scrum Master I",
+        "institution": "Scrum.org",
+        "institutionSite": "https://www.scrum.org/",
+        "location": "Online",
+        "date": "07/2023",
+        "certificate": "https://www.credly.com/badges/f749e3c2-2086-4211-b508-45bd7c3c9b89/linked_in_profile",
+        "description": "Certification demonstrating a fundamental understanding of Scrum principles and practices.",
+        "skills": ["Scrum Framework", "Team Leadership"]
+      },
+      {
+        "title": "Event Organization Consultant",
+        "institution": "Scrum.org",
+        "institutionSite": "https://somoslasiglo21rosario.com.ar/",
+        "location": "Rosario, Argentina",
+        "date": "12/2010",
+        "certificate": "https://drive.google.com/file/d/1S5niOSZrIAtCW3uy02SXBgvNUz1ATVJy/view?usp=sharing",
+        "description": "Certification of training in organization of different types of work or social events.",
+        "skills": ["Event Planning", "Organizational Skills"]
+      }
+    ]
+  }
+]

@@ -1,7 +1,7 @@
 .container {
   display: flex;
   flex-direction: row;
-  height: 100vh;
+  min-height: 100vh;
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -110,7 +110,7 @@
     @media (max-width: 768px) {
       .about-me-content {
         width: 90%;
-        padding: 0 20px;
+        padding: 20px;
       }
 
       .buttons-container {
