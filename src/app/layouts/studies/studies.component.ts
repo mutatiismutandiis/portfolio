@@ -4,11 +4,13 @@ import { CommonModule } from '@angular/common';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { PageLayoutComponent } from '../../layouts/page-layout/page-layout.component';
 import { StudiesService } from '../../services/studies.service';
+import { StudyDetailComponent } from '../../components/study-detail/study-detail.component';
+
 
 @Component({
   selector: 'app-studies',
   standalone: true,
-  imports: [CommonModule, MatExpansionModule, PageLayoutComponent],
+  imports: [CommonModule, MatExpansionModule, PageLayoutComponent, StudyDetailComponent],
   templateUrl: './studies.component.html',
   styleUrl: './studies.component.scss',
 })

@@ -1,6 +1,8 @@
 .accordion-container {
+  max-width: 1200px;
   width: 90%;
   height: 90%;
+  margin-bottom: 30px;
 
   // Styles for the First accordion (Categories)
   .category-accordion {
@@ -21,11 +23,30 @@
     mat-expansion-panel {
       margin-bottom: 1rem;
       background-color: #f4f4f4;
+
+      // We hide the title when the the item is expanded
+      &.mat-expanded {
+        mat-panel-title {
+          display: none;
+        }
+      }
+    }
+
+    mat-expansion-panel-header {
+      align-items: flex-start;
+      height: fit-content;
+      padding: 15px;
     }
 
     mat-panel-title {
       font-size: 1rem;
       font-weight: normal;
+      white-space: normal;
+    }
+
+    mat-expansion-indicator {
+      align-self: center;
+      margin: 0;
     }
   }
 }

@@ -1,0 +1,76 @@
+<div class="study-detail">
+  <!-- Display title and institution -->
+  <h4>
+    {{ item.title }}
+  </h4>
+  <h5>
+    {{ item.institution }}
+    <a
+      *ngIf="item.careerSite || item.institutionSite"
+      [href]="item.careerSite || item.institutionSite"
+      target="_blank"
+    >
+      <span class="material-icons">open_in_new</span>
+    </a>
+  </h5>
+
+  <!--Display incomplete reason or certificate according to type -->
+  <p>
+    <ng-container *ngIf="getBadgeText() === 'View certificate'; else badgeText">
+      <a [href]="certificate" target="_blank" class="badge">
+        {{ getBadgeText() }}
+        <span *ngIf="getBadgeIcon()" class="material-icons">{{ getBadgeIcon() }}</span>
+      </a>
+    </ng-container>
+    <ng-template #badgeText>
+      <span class="badge">
+        {{ getBadgeText() }}
+        <span *ngIf="getBadgeIcon()" class="material-icons">{{ getBadgeIcon() }}</span>
+      </span>
+    </ng-template>
+  </p>
+
+  <!-- Display date according to type -->
+  <p>
+    <span class="material-icons"> calendar_month </span>
+    {{ displayDate() }}
+  </p>
+
+  <!-- Display location and description -->
+  <p>
+    <span class="material-icons"> location_pin </span>
+    {{ item.location }}
+  </p>
+  <p class="description">{{ item.description }}</p>
+
+  <!-- Display details for Higher Education -->
+  <div class="details-container" *ngIf="isHigherEducation">
+    <ng-container *ngFor="let detail of item.details">
+      <h5>
+        <span class="material-icons"> info_outline </span> {{ detail.title }}
+      </h5>
+      <ul>
+        <li *ngFor="let content of detail.content" class="details-item">
+          <ng-container
+            *ngIf="detail.title === 'Publications'; else regularContent"
+          >
+            <p>
+              {{ content.reference }}
+              <a [href]="content.url" target="_blank">
+                <span class="material-icons"> open_in_new </span>
+              </a>
+            </p>
+          </ng-container>
+          <ng-template #regularContent>
+            {{ content }}
+          </ng-template>
+        </li>
+      </ul>
+    </ng-container>
+  </div>
+
+  <!--Display skills for IT Courses and Certifications -->
+  <div class="skills-container" *ngIf="skills">
+    <span *ngFor="let skill of skills" class="skill">{{ skill }}</span>
+  </div>
+</div>

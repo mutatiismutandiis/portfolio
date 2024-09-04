@@ -6,7 +6,7 @@
         "title": "Master of Science (Data and System Sciences, specialization in IT Project Management)",
         "institution": "Stockholm University",
         "careerSite": "https://www.su.se/english/search-courses-and-programmes/sprom-1.413331",
-        "location": "Online",
+        "location": "Online.",
         "startDate": "09/2024",
         "incomplete": true,
         "incompleteReason": "In progress",
@@ -26,7 +26,7 @@
         "title": "PhD in Engineering (Applied Mathematics)",
         "institution": "National University of Rosario",
         "careerSite": "https://posgrado.fceia.unr.edu.ar/carreras/doctorados/9-doctorado-en-ingenieria.html",
-        "location": "Rosario, Argentina",
+        "location": "Rosario, Argentina.",
         "startDate": "04/2019",
         "endDate": "06/2022",
         "incomplete": true,
@@ -36,15 +36,15 @@
           {
             "title": "Research and Projects",
             "content": [
-              "Collaborated on applied mathematics research projects.",
-              "Published several research papers."
+              "Collaborated on applied mathematics research projects",
+              "Published several research papers"
             ]
           },
           {
             "title": "Activities and Societies",
             "content": [
-              "Advanced coursework and seminars in engineering.",
-              "Participation in conferences and workshops.",
+              "Advanced coursework and seminars in engineering",
+              "Participation in conferences and workshops",
               "Programming in Python and Matlab",
               "Writing scientific papers in LateX"
             ]
@@ -52,9 +52,18 @@
           {
             "title": "Publications",
             "content": [
-              "https://www.sciencedirect.com/science/article/abs/pii/S0005109821002624",
-              "https://www.conicet.gov.ar/new_scp/detalle.php?keywords=&id=20631&inst=yes&congresos=yes&detalles=yes&congr_id=9759068",
-              "https://arxiv.org/abs/1907.11673"
+              {
+                "reference": "Vallarella, A. J., Cardone, P., & Haimovich, H. (2021). Semiglobal exponential input-to-state stability of sampled-data systems based on approximate discrete-time models. Automatica, 131, 109742.",
+                "url": "https://www.sciencedirect.com/science/article/abs/pii/S0005109821002624"
+              },
+              {
+                "reference": "Vallarella, A. J., Cardone, P., & Haimovich, H. (2020). On the use of backward Euler for sampled-data control design. 27th Argentine Congress of Automatic Control AADECA20.",
+                "url": "https://www.conicet.gov.ar/new_scp/detalle.php?keywords=&id=20631&inst=yes&congresos=yes&detalles=yes&congr_id=9759068"
+              },
+              {
+                "reference": "Haimovich, H., Mancilla-Aguilar, J. L., & Cardone, P. (2019, July 26). A characterization of strong iISS for time-varying impulsive systems. arXiv.org.",
+                "url": "https://arxiv.org/abs/1907.11673"
+              }
             ]
           }
         ]
@@ -63,7 +72,7 @@
         "title": "Bachelor of Mathematics",
         "institution": "National University of Rosario",
         "careerSite": "https://web.fceia.unr.edu.ar/es/profesorado-de-matem%C3%A1tica.html",
-        "location": "Rosario, Argentina",
+        "location": "Rosario, Argentina.",
         "startDate": "03/2014",
         "endDate": "03/2017",
         "certificate": "https://drive.google.com/file/d/1-WVyvrEBxaMl4iR8CcFvzRDR-N6etpJr/view?usp=sharing",
@@ -79,8 +88,8 @@
           {
             "title": "Activities and Societies",
             "content": [
-              "Professional internships in mathematics education.",
-              "Research and final project on mathematics education.",
+              "Professional internships in mathematics education",
+              "Research and final project on mathematics education",
               "Writing academic papers in LateX"
             ]
           }
