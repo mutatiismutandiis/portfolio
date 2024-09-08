@@ -47,11 +47,11 @@
       color: #333;
 
       @media (min-width: 768px) {
-        font-size: 1.125rem; 
+        font-size: 1.125rem;
       }
 
       @media (min-width: 1200px) {
-        font-size: 1.25rem;  
+        font-size: 1.25rem;
       }
     }
 
@@ -62,11 +62,11 @@
       color: #555;
 
       @media (min-width: 768px) {
-        font-size: 1rem; 
+        font-size: 1rem;
       }
 
       @media (min-width: 1200px) {
-        font-size: 1.125rem;  
+        font-size: 1.125rem;
       }
     }
 
@@ -82,12 +82,12 @@
         transition: background-color 0.3s ease;
 
         @media (min-width: 768px) {
-          padding: 8px 16px;  
-          font-size: 1rem; 
+          padding: 8px 16px;
+          font-size: 1rem;
         }
 
         @media (min-width: 1200px) {
-          padding: 10px 20px; 
+          padding: 10px 20px;
           font-size: 1.125rem;
         }
 

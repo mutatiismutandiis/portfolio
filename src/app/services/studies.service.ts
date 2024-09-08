@@ -4,10 +4,9 @@ import { Observable } from 'rxjs';
 import { environment } from '../../environments/environment';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class StudiesService {
-
   private apiUrl = environment.apiUrl;
 
   constructor(private httpClient: HttpClient) {}
@@ -17,4 +16,3 @@ export class StudiesService {
     return this.httpClient.get<any[]>(`${this.apiUrl}/api/studies`);
   }
 }
-

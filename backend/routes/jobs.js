@@ -8,7 +8,9 @@ import { dirname } from "path";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-const jobs = JSON.parse(fs.readFileSync(path.join(__dirname, "../jobs.json"), "utf-8"));
+const jobs = JSON.parse(
+  fs.readFileSync(path.join(__dirname, "../jobs.json"), "utf-8")
+);
 const router = express.Router();
 
 // GET all jobs
@@ -19,8 +21,8 @@ router.get("/", (req, res) => {
 // GET job by id
 router.get("/:id", (req, res) => {
   const jobId = parseInt(req.params.id, 10);
-  const job = jobs.find(job => job.id === jobId);
-  
+  const job = jobs.find((job) => job.id === jobId);
+
   if (job) {
     res.json(job);
   } else {

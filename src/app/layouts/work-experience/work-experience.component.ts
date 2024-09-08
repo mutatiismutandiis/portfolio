@@ -35,7 +35,7 @@ export class WorkExperienceComponent {
             ...job,
             date: this.formatDate(job.startDate, job.endDate),
             logo: this.getLogoUrl(job.companyLogo),
-            companyLink: job.companyLink
+            companyLink: job.companyLink,
           }));
         })
       )
@@ -63,7 +63,7 @@ export class WorkExperienceComponent {
         tap((job) => {
           this.dialog.open(WorkFullCardComponent, {
             data: job,
-            width: '80%'
+            width: '80%',
           });
         })
       )

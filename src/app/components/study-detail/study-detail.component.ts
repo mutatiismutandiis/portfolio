@@ -63,7 +63,8 @@ export class StudyDetailComponent implements OnInit {
 
     // Adjustments according to category
     this.details = this.isHigherEducation ? this.item.details : undefined;
-    this.skills = this.isITCourse || this.isCertification ? this.item.skills : undefined;  
+    this.skills =
+      this.isITCourse || this.isCertification ? this.item.skills : undefined;
   }
 
   // Function to handle date display logic

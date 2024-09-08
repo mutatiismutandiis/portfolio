@@ -19,13 +19,17 @@
     <ng-container *ngIf="getBadgeText() === 'View certificate'; else badgeText">
       <a [href]="certificate" target="_blank" class="badge">
         {{ getBadgeText() }}
-        <span *ngIf="getBadgeIcon()" class="material-icons">{{ getBadgeIcon() }}</span>
+        <span *ngIf="getBadgeIcon()" class="material-icons">{{
+          getBadgeIcon()
+        }}</span>
       </a>
     </ng-container>
     <ng-template #badgeText>
       <span class="badge">
         {{ getBadgeText() }}
-        <span *ngIf="getBadgeIcon()" class="material-icons">{{ getBadgeIcon() }}</span>
+        <span *ngIf="getBadgeIcon()" class="material-icons">{{
+          getBadgeIcon()
+        }}</span>
       </span>
     </ng-template>
   </p>

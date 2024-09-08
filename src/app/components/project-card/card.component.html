@@ -1,11 +1,15 @@
 <div class="card">
-  <img class="card-img-top" [src]="image" alt="Project image">
+  <img class="card-img-top" [src]="image" alt="Project image" />
   <div class="card-body">
     <h5 class="card-title">{{ name }}</h5>
     <p class="card-text">{{ description }}</p>
     <div class="card-buttons">
-      <a [href]="repoLink" target="_blank" class="btn btn-primary">GitHub Repo</a>
-      <a [href]="deployLink" target="_blank" class="btn btn-secondary">View Project</a>
+      <a [href]="repoLink" target="_blank" class="btn btn-primary"
+        >GitHub Repo</a
+      >
+      <a [href]="deployLink" target="_blank" class="btn btn-secondary"
+        >View Project</a
+      >
     </div>
   </div>
 </div>

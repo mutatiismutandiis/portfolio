@@ -6,7 +6,7 @@ import { Router } from '@angular/router';
   standalone: true,
   imports: [],
   templateUrl: './page-layout.component.html',
-  styleUrl: './page-layout.component.scss'
+  styleUrl: './page-layout.component.scss',
 })
 export class PageLayoutComponent {
   constructor(private router: Router) {}

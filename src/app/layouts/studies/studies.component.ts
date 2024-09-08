@@ -6,11 +6,15 @@ import { PageLayoutComponent } from '../../layouts/page-layout/page-layout.compo
 import { StudiesService } from '../../services/studies.service';
 import { StudyDetailComponent } from '../../components/study-detail/study-detail.component';
 
-
 @Component({
   selector: 'app-studies',
   standalone: true,
-  imports: [CommonModule, MatExpansionModule, PageLayoutComponent, StudyDetailComponent],
+  imports: [
+    CommonModule,
+    MatExpansionModule,
+    PageLayoutComponent,
+    StudyDetailComponent,
+  ],
   templateUrl: './studies.component.html',
   styleUrl: './studies.component.scss',
 })

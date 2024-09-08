@@ -9,13 +9,21 @@
         <h3>{{ job?.companyName }}</h3>
       </div>
       <div class="logo">
-        <a *ngIf="job?.companyLink" [href]="job?.companyLink" target="_blank" rel="noopener noreferrer">
+        <a
+          *ngIf="job?.companyLink"
+          [href]="job?.companyLink"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <img [src]="getLogoUrl(job?.companyLogo)" alt="Company Logo" />
         </a>
       </div>
     </div>
     <div class="description">
-      <p *ngFor="let item of job?.description" [innerHTML]="formatDescription(item)"></p>
+      <p
+        *ngFor="let item of job?.description"
+        [innerHTML]="formatDescription(item)"
+      ></p>
     </div>
     <div class="skills">
       <span *ngFor="let skill of job?.skills" class="skill">{{ skill }}</span>

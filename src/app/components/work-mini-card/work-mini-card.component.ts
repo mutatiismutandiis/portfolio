@@ -4,7 +4,7 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 @Component({
   selector: 'app-work-mini-card',
   standalone: true,
-  imports: [ CommonModule],
+  imports: [CommonModule],
   templateUrl: './work-mini-card.component.html',
   styleUrl: './work-mini-card.component.scss',
 })

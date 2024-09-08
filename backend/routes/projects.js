@@ -8,7 +8,9 @@ import { dirname } from "path";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-const projects = JSON.parse(fs.readFileSync(path.join(__dirname, "../projects.json"), "utf-8"));
+const projects = JSON.parse(
+  fs.readFileSync(path.join(__dirname, "../projects.json"), "utf-8")
+);
 const router = express.Router();
 
 router.get("/", (req, res) => {
