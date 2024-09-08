@@ -16,7 +16,8 @@ const app = express();
 // Middleware to allow cors
 app.use(
   cors({
-    origin: "http://localhost:4200",
+    origin:  process.env.FRONTEND_URL || "*",
+    //origin: "http://localhost:4200",
   })
 );
 
