@@ -1,6 +1,6 @@
 export const environment = {
   production: false,
-  apiUrl: 'http://localhost:3000',
+  apiUrl: 'https://backend-portfolio-6fim.onrender.com',
   imageUrl: '/images',
   logoUrl: '/logos',
 };
