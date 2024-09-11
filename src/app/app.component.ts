@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { MainPageComponent } from './layouts/main-page/main-page.component';
-import { PortfolioComponent } from './layouts/portfolio/portfolio.component';
-import { WorkExperienceComponent } from './layouts/work-experience/work-experience.component';
-import { StudiesComponent } from './layouts/studies/studies.component';
+import { MainPageComponent } from './pages/main-page/main-page.component';
+import { PortfolioComponent } from './pages/portfolio/portfolio.component';
+import { WorkExperienceComponent } from './pages/work-experience/work-experience.component';
+import { StudiesComponent } from './pages/studies/studies.component';
 
 @Component({
   selector: 'app-root',

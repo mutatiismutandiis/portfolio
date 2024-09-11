@@ -1,5 +1,5 @@
 <app-page-layout>
-  <div class="accordion-container" *ngIf="studies.length > 0; else loading">
+  <div class="accordion-container" *ngIf="studies.length > 0">
     <!-- First accordion for the categories -->
     <mat-accordion class="category-accordion">
       <mat-expansion-panel *ngFor="let category of studies">
@@ -27,8 +27,4 @@
       </mat-expansion-panel>
     </mat-accordion>
   </div>
-
-  <ng-template #loading>
-    <p>Loading studies data...</p>
-  </ng-template>
 </app-page-layout>

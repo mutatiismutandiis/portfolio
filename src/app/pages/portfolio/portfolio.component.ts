@@ -1,20 +1,28 @@
-import { Component, CUSTOM_ELEMENTS_SCHEMA, OnInit } from '@angular/core';
+import {
+  AfterViewInit,
+  Component,
+  OnInit,
+  CUSTOM_ELEMENTS_SCHEMA,
+} from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { CardComponent } from '../project-card/card.component';
-import { ProjectService } from '../../services/project.service';
 import Swiper from 'swiper';
 import { Navigation, Pagination } from 'swiper/modules';
 
+import { PageLayoutComponent } from '../../layouts/page-layout/page-layout.component';
+import { CardComponent } from '../../components/project-card/card.component';
+import { ProjectService } from '../../services/project.service';
+
 Swiper.use([Navigation, Pagination]);
+
 @Component({
-  selector: 'app-project-carousel',
+  selector: 'app-portfolio',
   standalone: true,
-  imports: [CommonModule, CardComponent],
-  templateUrl: './project-carousel.component.html',
-  styleUrl: './project-carousel.component.scss',
+  templateUrl: './portfolio.component.html',
+  styleUrl: './portfolio.component.scss',
+  imports: [CommonModule, PageLayoutComponent, CardComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
-export class ProjectCarouselComponent implements OnInit {
+export class PortfolioComponent implements OnInit, AfterViewInit {
   projects: any[] = [];
 
   constructor(private projectService: ProjectService) {}
