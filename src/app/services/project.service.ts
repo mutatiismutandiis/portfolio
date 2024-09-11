@@ -1,21 +1,17 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { environment } from '../../environments/environment';
-
+import { ApiService } from './api.service';
 @Injectable({
   providedIn: 'root',
 })
 export class ProjectService {
-  private apiUrl = environment.apiUrl;
-
-  constructor(private httpClient: HttpClient) {}
+  constructor(private apiService: ApiService) {}
 
   getProjects(): Observable<any[]> {
-    return this.httpClient.get<any[]>(`${this.apiUrl}/api/projects`);
+    return this.apiService.getData('projects');
   }
 
   getImageUrl(imagePath: string): string {
-    return `${this.apiUrl}${imagePath}`;
+    return this.apiService.getImageUrl(imagePath);
   }
 }

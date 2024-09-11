@@ -1,25 +1,21 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { environment } from '../../environments/environment';
-
+import { ApiService } from './api.service';
 @Injectable({
   providedIn: 'root',
 })
 export class JobService {
-  private apiUrl = environment.apiUrl;
-
-  constructor(private httpClient: HttpClient) {}
+  constructor(private apiService: ApiService) {}
 
   getJobs(): Observable<any[]> {
-    return this.httpClient.get<any[]>(`${this.apiUrl}/api/jobs`);
+    return this.apiService.getData('jobs');
   }
 
   getJobById(id: number): Observable<any> {
-    return this.httpClient.get<any>(`${this.apiUrl}/api/jobs/${id}`);
+    return this.apiService.getData(`jobs/${id}`);
   }
 
   getLogoUrl(logoPath: string): string {
-    return `${this.apiUrl}${logoPath}`;
+    return this.apiService.getImageUrl(logoPath);
   }
 }

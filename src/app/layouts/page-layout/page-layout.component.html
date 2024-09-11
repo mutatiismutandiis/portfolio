@@ -1,7 +1,19 @@
 <div class="page-container">
   <div class="background-image"></div>
   <div class="content">
+    <!-- Spinner while the backend loads the data -->
+    <div class="loading-container" *ngIf="isLoading">
+      <mat-spinner></mat-spinner>
+      <p class="loading-text">
+        Since we are using free hosting, it can take a bit to load the content
+        from the Backend... Please wait 😊
+      </p>
+    </div>
+
+    <!-- Different contents -->
     <ng-content></ng-content>
+
+    <!-- Button to return to the main view -->
     <button (click)="navigateToMain()" class="back-button">
       Back to Main Page
     </button>
