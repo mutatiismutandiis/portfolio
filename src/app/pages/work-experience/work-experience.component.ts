@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
-
 import { tap } from 'rxjs/operators';
 
 import { PageLayoutComponent } from '../../layouts/page-layout/page-layout.component';
 import { WorkMiniCardComponent } from '../../components/work-mini-card/work-mini-card.component';
 import { WorkFullCardComponent } from '../../components/work-full-card/work-full-card.component';
-import { JobService } from '../../services/job.service';
+import { AllDataService } from '../../services/all-data.service';
+import { environment } from '../../../environments/environment';
 
 @Component({
   selector: 'app-work-experience',
@@ -24,23 +24,26 @@ import { JobService } from '../../services/job.service';
 export class WorkExperienceComponent {
   jobs: any[] = [];
 
-  constructor(private jobService: JobService, public dialog: MatDialog) {}
+  constructor(private allData: AllDataService, public dialog: MatDialog) { }
 
   ngOnInit(): void {
-    this.jobService
-      .getJobs()
+    this.allData.getAllData()
       .pipe(
         tap((data) => {
-          this.jobs = data.map((job) => ({
-            ...job,
-            date: this.formatDate(job.startDate, job.endDate),
-            logo: this.getLogoUrl(job.companyLogo),
-            companyLink: job.companyLink,
-          }));
+          if (data?.jobs) {
+            this.jobs = data.jobs.map((job: any) => ({
+              ...job,
+              date: this.formatDate(job.startDate, job.endDate),
+              logo: this.getLogoUrl(job.companyLogo),
+              companyLink: job.companyLink,
+            }));
+            // Log the logo URLs for debugging
+            this.jobs.forEach(job => console.log('Logo URL:', job.logo));
+          }
         })
       )
       .subscribe({
-        error: (error) => console.error('Error fetching jobs:', error),
+        error: (error) => console.error('Error fetching jobs from AllDataService:', error),
       });
   }
 
@@ -53,22 +56,16 @@ export class WorkExperienceComponent {
   }
 
   getLogoUrl(logoPath: string): string {
-    return this.jobService.getLogoUrl(logoPath);
+    return `${environment.apiUrl}/logos/${logoPath}`;
   }
 
   openFullCard(id: number): void {
-    this.jobService
-      .getJobById(id)
-      .pipe(
-        tap((job) => {
-          this.dialog.open(WorkFullCardComponent, {
-            data: job,
-            width: '80%',
-          });
-        })
-      )
-      .subscribe({
-        error: (error) => console.error('Error fetching job details:', error),
+   const selectedJob = this.jobs.find((j) => j.id === id);
+    if (selectedJob) {
+      this.dialog.open(WorkFullCardComponent, {
+        data: selectedJob,
+        width: '80%',
       });
+    } 
   }
 }

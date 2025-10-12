@@ -10,7 +10,9 @@ import { Navigation, Pagination } from 'swiper/modules';
 
 import { PageLayoutComponent } from '../../layouts/page-layout/page-layout.component';
 import { CardComponent } from '../../components/project-card/card.component';
-import { ProjectService } from '../../services/project.service';
+import { AllDataService } from '../../services/all-data.service';
+import { tap } from 'rxjs/operators';
+import { environment } from '../../../environments/environment';
 
 Swiper.use([Navigation, Pagination]);
 
@@ -25,17 +27,24 @@ Swiper.use([Navigation, Pagination]);
 export class PortfolioComponent implements OnInit, AfterViewInit {
   projects: any[] = [];
 
-  constructor(private projectService: ProjectService) {}
+  constructor(private allData: AllDataService) {}
 
   ngOnInit(): void {
-    this.projectService.getProjects().subscribe(
-      (data) => {
-        this.projects = data;
-      },
-      (error) => {
-        console.error('Error fetching projects:', error);
-      }
-    );
+    this.allData.getAllData()
+      .pipe(
+        tap((data) => {
+          if (data?.projects) {
+            this.projects = data.projects.map((project: any) => ({
+              ...project
+            }));
+          }
+        })
+      )
+      .subscribe({
+        error: (error) => {
+          console.error('Error fetching projects from AllDataService:', error);
+        }
+      });
   }
 
   ngAfterViewInit(): void {
@@ -43,7 +52,7 @@ export class PortfolioComponent implements OnInit, AfterViewInit {
   }
 
   getImageUrl(imagePath: string): string {
-    return this.projectService.getImageUrl(imagePath);
+    return `${environment.apiUrl}/images/${imagePath}`;
   }
 
   initializeSwiper(): void {

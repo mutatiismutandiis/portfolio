@@ -6,7 +6,9 @@ import {
   MatDialogRef,
 } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
-import { JobService } from '../../services/job.service';
+
+import { AllDataService } from '../../services/all-data.service';
+import { environment } from '../../../environments/environment';
 
 @Component({
   selector: 'app-work-full-card',
@@ -20,14 +22,14 @@ export class WorkFullCardComponent {
 
   constructor(
     public dialogRef: MatDialogRef<WorkFullCardComponent>,
-    private jobService: JobService,
+    private allData: AllDataService,
     @Inject(MAT_DIALOG_DATA) public data: any
   ) {
     this.job = data;
   }
 
   getLogoUrl(logoPath: string): string {
-    return this.jobService.getLogoUrl(logoPath);
+    return `${environment.apiUrl}/logos/${logoPath}`;
   }
 
   formatDescription(description: string): string {

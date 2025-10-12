@@ -56,6 +56,15 @@
           color: #5a6268;
         }
       }
+
+      cursor: pointer;
+      transition: color 0.2s,
+      transform 0.2s;
+    }
+
+    .more-info a:hover {
+      color: gray;
+      transform: scale(1.2);
     }
   }
 }
