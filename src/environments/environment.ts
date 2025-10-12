@@ -1,6 +1,6 @@
+// For local development (backend and frontend on the same machine)
 export const environment = {
   production: false,
-  // apiUrl: 'https://backend-portfolio-6fim.onrender.com',
   apiUrl: 'http://localhost:3000',
   imageUrl: '/images',
   logoUrl: '/logos',

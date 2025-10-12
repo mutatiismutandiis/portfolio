@@ -29,7 +29,6 @@ export class WorkFullCardComponent {
   }
 
   getLogoUrl(logoPath: string): string {
-    // TO DO: Review routes after BE deploy
     return `${environment.apiUrl}/logos/${logoPath}`;
   }
 
