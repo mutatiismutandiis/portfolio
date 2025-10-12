@@ -54,7 +54,7 @@
             "content": [
               {
                 "reference": "Vallarella, A. J., Cardone, P., & Haimovich, H. (2021). Semiglobal exponential input-to-state stability of sampled-data systems based on approximate discrete-time models. Automatica, 131, 109742.",
-                "url": "https://www.sciencedirect.com/science/article/abs/pii/S0005109821002624"
+                "url": "https://doi.org/10.1016/j.automatica.2021.109742"
               },
               {
                 "reference": "Vallarella, A. J., Cardone, P., & Haimovich, H. (2020). On the use of backward Euler for sampled-data control design. 27th Argentine Congress of Automatic Control AADECA20.",
@@ -62,7 +62,7 @@
               },
               {
                 "reference": "Haimovich, H., Mancilla-Aguilar, J. L., & Cardone, P. (2019, July 26). A characterization of strong iISS for time-varying impulsive systems. arXiv.org.",
-                "url": "https://arxiv.org/abs/1907.11673"
+                "url": "https://doi.org/10.48550/arXiv.1907.11673"
               }
             ]
           }
@@ -106,8 +106,8 @@
         "institutionSite": "https://institutodatascience.org/diplomatura-en-ciencia-de-datos-con-r-y-python/",
         "location": "Online",
         "startDate": "05/2022",
-        "incomplete": true,
-        "incompleteReason": "Pending Final Project",
+        "endDate": "11/2024",
+        "certificate": "https://drive.google.com/file/d/1Q5Jd5m2vuutSs58wDX5GljXKmrY7DmvH/view?usp=sharing",
         "description": "Comprehensive training in data analysis, machine learning, and artificial intelligence.",
         "skills": [
           "Data Analysis",
@@ -120,7 +120,7 @@
       {
         "title": "Frontend Development using React",
         "institution": "Government of the city of Buenos Aires",
-        "institutionSite": "https://buenosaires.gob.ar/educacion/codocodo/el-programa",
+        "institutionSite": "https://buenosaires.gob.ar/educacion",
         "location": "Online",
         "startDate": "03/2023",
         "endDate": "07/2023",
@@ -148,7 +148,7 @@
       {
         "title": "Fullstack PHP",
         "institution": "Government of the city of Buenos Aires",
-        "institutionSite": "https://buenosaires.gob.ar/educacion/codocodo/el-programa",
+        "institutionSite": "https://buenosaires.gob.ar/educacion",
         "location": "Online",
         "startDate": "08/2022",
         "endDate": "12/2022",
@@ -190,30 +190,56 @@
     "category": "Certifications",
     "items": [
       {
+        "title": "Professional Scrum Master II",
+        "institution": "Scrum.org",
+        "institutionSite": "https://www.scrum.org/assessments/professional-scrum-master-ii-certification",
+        "location": "Online",
+        "date": "09/2025",
+        "certificate": "https://www.credly.com/badges/dc774511-f6df-4072-9210-fdcd38c239f5/public_url",
+        "description": "Certification demonstrating an advanced level of Scrum mastery and proven an understanding of the underlying principles of Scrum.",
+        "skills": ["Agile", "PSM", "Scrum", "Scrum Master", "Senior Scrum Master"]
+      },
+      {
+        "title": "SAFe Agilist",
+        "institution": "Scaled Agile, Inc.",
+        "institutionSite": "https://scaledagile.com/certification/safe-agilist/",
+        "location": "Online",
+        "date": "11/2024",
+        "certificate": "https://www.credly.com/badges/e6d508ea-ae84-4780-83c2-62359b469cca/public_url",
+        "description": "Certification demonstrating the ability to lead Lean-Agile transformations and align teams around value delivery using the SAFe framework.",
+        "skills": [
+          "Agile",
+          "SAFe",
+          "Lean-Agile Leadership",
+          "Business Agility",
+          "PI Planning"
+        ]
+      },
+      {
         "title": "SAFe Scrum Master",
         "institution": "Scaled Agile, Inc.",
-        "institutionSite": "https://scaledagile.com/",
+        "institutionSite": "https://scaledagile.com/certification/scrum-master/",
         "location": "Online",
         "date": "07/2023",
-        "certificate": "https://www.credly.com/badges/4b3ecc0a-bd04-40a0-af2d-aa3514f389d6/linked_in_profile",
-        "description": "Certification in scaled agile frameworks, focusing on using Scrum and Kanban to facilitate team events, supporting program execution, and coaching Agile teams.",
+        "certificate": "https://www.credly.com/badges/476b65c4-5128-42d1-8414-28b9bf1c1b8e/public_url",
+        "description": "Certification validating the role of Scrum Master in a SAFe enterprise, including facilitation of team and ART-level events and support for agile delivery.",
         "skills": [
-          "Scaled Agile Frameworks",
+          "Agile",
+          "SAFe",
+          "Scrum Master",
           "Team Facilitation",
-          "Program Execution",
-          "Agile Teams",
           "PI Planning"
         ]
       },
       {
         "title": "Professional Scrum Master I",
         "institution": "Scrum.org",
-        "institutionSite": "https://www.scrum.org/",
+        "institutionSite": "https://www.scrum.org/assessments/professional-scrum-master-i-certification",
         "location": "Online",
         "date": "07/2023",
-        "certificate": "https://www.credly.com/badges/f749e3c2-2086-4211-b508-45bd7c3c9b89/linked_in_profile",
-        "description": "Certification demonstrating a fundamental understanding of Scrum principles and practices.",
-        "skills": ["Scrum Framework", "Team Leadership"]
+        "certificate": "https://www.credly.com/badges/f749e3c2-2086-4211-b508-45bd7c3c9b89/public_url",
+        "description": "Certification demonstrating a fundamental  level of Scrum mastery, including the concepts of applying Scrum, and proven an understanding of Scrum as described in the Scrum Guide.",
+        "skills": ["Agile", "PSM", "Scrum", "Scrum Master"]
       },
       {
         "title": "Event Organization Consultant",

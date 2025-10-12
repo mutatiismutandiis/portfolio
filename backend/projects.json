@@ -1,97 +1,105 @@
 [
   {
     "id": 1,
+    "name": "Data Science Project",
+    "description": "Python",
+    "image": "data-science-project.png",
+    "repoLink": "https://github.com/mutatiismutandiis/diplomatura-projecto-final",
+    "deployLink": "https://youtu.be/-GXgOdmrUJ4?si=0w1EdN1LUZqaYdlS"
+  },
+  {
+    "id": 2,
     "name": "Movies site",
     "description": "React",
-    "image": "/images/netflix-clone.png",
+    "image": "netflix-clone.png",
     "repoLink": "https://github.com/euge-carr/clon-netflix",
     "deployLink": "https://clon-netflix-mauve.vercel.app/"
   },
   {
-    "id": 2,
+    "id": 3,
     "name": "Portfolio",
     "description": "Angular, Node,js",
-    "image": "/images/portfolio.png",
+    "image": "portfolio.png",
     "repoLink": "https://github.com/mutatiismutandiis/portfolio",
-    "deployLink": "https://github.com/mutatiismutandiis/portfolio"
+    "deployLink": "https://frontend-portfolio-38hh.onrender.com/"
   },
   {
-    "id": 3,
+    "id": 4,
     "name": "Todo List",
     "description": "React",
-    "image": "/images/to-do-list.png",
+    "image": "to-do-list.png",
     "repoLink": "https://github.com/mutatiismutandiis/todo-list",
     "deployLink": "https://glistening-caramel-0a42fe.netlify.app/"
   },
   {
-    "id": 4,
+    "id": 5,
     "name": "Cultural Repo",
     "description": "HTML, Bootstrap, Javascript",
-    "image": "/images/repo-cultural.png",
+    "image": "repo-cultural.png",
     "repoLink": "https://github.com/mutatiismutandiis/repo-cultural",
     "deployLink": "https://mutatiismutandiis.github.io/repo-cultural/"
   },
   {
-    "id": 5,
+    "id": 6,
     "name": "Taco town",
     "description": "CSS, EJS, Node.js",
-    "image": "/images/taco-town.png",
+    "image": "taco-town.png",
     "repoLink": "https://github.com/mutatiismutandiis/taco-town",
     "deployLink": "https://taco-town-qc2s.onrender.com/"
   },
   {
-    "id": 6,
+    "id": 7,
     "name": "I'm bored",
     "description": "CSS, EJS, Node.js",
-    "image": "/images/im-bored.png",
+    "image": "im-bored.png",
     "repoLink": "https://github.com/mutatiismutandiis/im-bored",
     "deployLink": "https://im-bored-hwou.onrender.com/"
   },
   {
-    "id": 7,
+    "id": 8,
     "name": "Blog",
     "description": "CSS, EJS, Node.js",
-    "image": "/images/blog-web-application.png",
+    "image": "blog-web-application.png",
     "repoLink": "https://github.com/mutatiismutandiis/blog-web-application",
     "deployLink": "https://blog-web-application-04ah.onrender.com/"
   },
   {
-    "id": 8,
+    "id": 9,
     "name": "Visit a new Brewery",
     "description": "CSS, EJS, Node.js",
-    "image": "/images/use-public-api.png",
+    "image": "use-public-api.png",
     "repoLink": "https://github.com/mutatiismutandiis/use-public-api",
     "deployLink": "https://use-public-api.onrender.com/"
   },
   {
-    "id": 9,
+    "id": 10,
     "name": "Jokes",
     "description": "CSS, EJS, Node.js",
-    "image": "/images/diy-api.png",
+    "image": "diy-api.png",
     "repoLink": "https://github.com/mutatiismutandiis/diy-api",
     "deployLink": "https://diy-api.onrender.com/"
   },
   {
-    "id": 10,
+    "id": 11,
     "name": "Conference site",
     "description": "HTML, CSS, Javascript, PHP",
-    "image": "/images/conferencias.png",
+    "image": "conferencias.png",
     "repoLink": "https://github.com/mutatiismutandiis/tpfinal",
-    "deployLink": "https://tpconferenciacardone.000webhostapp.com/"
+    "deployLink": "https://mutatiismutandiis.github.io/conferencias/"
   },
   {
-    "id": 11,
+    "id": 12,
     "name": "Simon Game",
     "description": "HTML, CSS, Javascript",
-    "image": "/images/simon-game.png",
+    "image": "simon-game.png",
     "repoLink": "https://github.com/mutatiismutandiis/simon-game",
     "deployLink": "https://mutatiismutandiis.github.io/simon-game/"
   },
   {
-    "id": 4,
+    "id": 13,
     "name": "Band Generator",
     "description": "Node.js",
-    "image": "/images/band-generator.png",
+    "image": "band-generator.png",
     "repoLink": "https://github.com/mutatiismutandiis/band-generator",
     "deployLink": "https://band-generator-pllm.onrender.com/"
   }

@@ -3,12 +3,15 @@
     "id": 1,
     "jobTitle": "Scrum Master",
     "companyName": "HID Global",
-    "companyLogo": "/logos/hid.png",
+    "companyLogo": "hid.png",
     "companyLink": "https://www.hidglobal.com/",
     "location": "Prague, Czech Republic",
     "startDate": "16/10/2024",
     "endDate": "",
-    "description": [],
+    "description": [
+      "Servant leadership: Guiding a new team to integrate agile methodologies and lead an ART, fostering collaboration between multiple international teams.",
+      "Technical Collaborator: Developing product documentation and modelling user flows and services in low-code platform."
+    ],
     "skills": [
       "Scrum",
       "Agile Methodologies",
@@ -21,13 +24,13 @@
     "id": 2,
     "jobTitle": "Scrum Master & Frontend Developer",
     "companyName": "Buhler Group",
-    "companyLogo": "/logos/buhler.png",
+    "companyLogo": "buhler.png",
     "companyLink": "https://www.buhlergroup.com/",
     "location": "Prague, Czech Republic",
     "startDate": "01/09/2022",
     "endDate": "30/09/2024",
     "description": [
-      "Scrum Master: Increased team productivity by facilitating Agile transformation and improving communication among cross-functional teams. Lead the the Agile transformation of a new team. Actively participate in SAFe ART and lead the Scrum Master Community of Practice.",
+      "Scrum Master: Lead two development teams as part of the same ART according to the SAFe framework. My responsibilities included preparing product features, coordinating meetings, and continuously improving processes in each iteration.",
       "Frontend Developer: Maintained and enhanced HMI applications for one of the main business unit using HTML, CSS, JavaScript, and TypeScript. Implemented new features, performed code refactoring, and developed testing frameworks in Cypress to ensure application stability. Actively participated of the migration of a major application to Angular."
     ],
     "skills": [
@@ -48,7 +51,7 @@
     "id": 3,
     "jobTitle": "IT Student Support",
     "companyName": "Commerzbank",
-    "companyLogo": "/logos/commerzbank.png",
+    "companyLogo": "commerzbank.png",
     "companyLink": "https://www.commerzbank.de/",
     "location": "Prague, Czech Republic",
     "startDate": "01/07/2022",
@@ -63,7 +66,7 @@
     "id": 4,
     "jobTitle": "Doctoral Research Fellow",
     "companyName": "CIFASIS-CONICET",
-    "companyLogo": "/logos/conicet.png",
+    "companyLogo": "conicet.png",
     "companyLink": "https://www.cifasis-conicet.gov.ar/",
     "location": "Rosario, Argentina",
     "startDate": "01/04/2019",
@@ -84,30 +87,8 @@
   {
     "id": 5,
     "jobTitle": "Teacher Assistant",
-    "companyName": "FCEIA-UNR",
-    "companyLogo": "/logos/unr.png",
-    "companyLink": "https://web.fceia.unr.edu.ar/",
-    "location": "Rosario, Argentina",
-    "startDate": "15/03/2015",
-    "endDate": "30/06/2022",
-    "description": [
-      "Problem-Solving Approach: Led problem-based learning sessions in Statistics, Algebra, and Mathematical Analysis, using real-world engineering data. Facilitated programming with R to analyze data, emphasizing teamwork and practical problem-solving.",
-      "Course Development: Developed custom study materials and collaborated on curriculum design, focusing on real-world applications and team-based projects to enhance student engagement and learning outcomes."
-    ],
-    "skills": [
-      "R",
-      "LateX",
-      "Statistics",
-      "Presentation skills",
-      "Communication skills",
-      "Collaboration"
-    ]
-  },
-  {
-    "id": 6,
-    "jobTitle": "Teacher Assistant",
     "companyName": "FRRo-UTN",
-    "companyLogo": "/logos/utn.png",
+    "companyLogo": "utn.png",
     "companyLink": "https://www.frro.utn.edu.ar/",
     "location": "Rosario, Argentina",
     "startDate": "02/05/2018",
@@ -120,6 +101,28 @@
       "GeoGebra",
       "LateX",
       "Mathematical Analysis",
+      "Presentation skills",
+      "Communication skills",
+      "Collaboration"
+    ]
+  },
+  {
+    "id": 6,
+    "jobTitle": "Teacher Assistant",
+    "companyName": "FCEIA-UNR",
+    "companyLogo": "unr.png",
+    "companyLink": "https://web.fceia.unr.edu.ar/",
+    "location": "Rosario, Argentina",
+    "startDate": "15/03/2015",
+    "endDate": "30/06/2022",
+    "description": [
+      "Problem-Solving Approach: Led problem-based learning sessions in Statistics, Algebra, and Mathematical Analysis, using real-world engineering data. Facilitated programming with R to analyze data, emphasizing teamwork and practical problem-solving.",
+      "Course Development: Developed custom study materials and collaborated on curriculum design, focusing on real-world applications and team-based projects to enhance student engagement and learning outcomes."
+    ],
+    "skills": [
+      "R",
+      "LateX",
+      "Statistics",
       "Presentation skills",
       "Communication skills",
       "Collaboration"

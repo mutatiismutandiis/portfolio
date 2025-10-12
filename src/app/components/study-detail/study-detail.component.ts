@@ -5,7 +5,7 @@ import { MatIcon } from '@angular/material/icon';
 @Component({
   selector: 'app-study-detail',
   standalone: true,
-  imports: [CommonModule, MatIcon],
+  imports: [CommonModule],
   templateUrl: './study-detail.component.html',
   styleUrl: './study-detail.component.scss',
 })
