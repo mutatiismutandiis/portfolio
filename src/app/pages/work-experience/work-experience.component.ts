@@ -37,8 +37,6 @@ export class WorkExperienceComponent {
               logo: this.getLogoUrl(job.companyLogo),
               companyLink: job.companyLink,
             }));
-            // Log the logo URLs for debugging
-            this.jobs.forEach(job => console.log('Logo URL:', job.logo));
           }
         })
       )
