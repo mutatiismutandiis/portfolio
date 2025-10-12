@@ -52,6 +52,7 @@ export class PortfolioComponent implements OnInit, AfterViewInit {
   }
 
   getImageUrl(imagePath: string): string {
+    // TO DO: Review routes after BE deploy
     return `${environment.apiUrl}/images/${imagePath}`;
   }
 
