@@ -37,7 +37,7 @@ app.use("/api/studies", studiesRouter);
 
 const PORT = process.env.PORT || 3000;
 
-// endpoint que devuelve todo junto
+// Endpoint to get all data together (projects, jobs, studies)
 app.get('/api/all', async (req, res) => {
   try {
     const base = __dirname;
