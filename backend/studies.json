@@ -190,6 +190,22 @@
     "category": "Certifications",
     "items": [
       {
+        "title": "AI-Empowered SAFe Release Train Engineer",
+        "institution": "Scaled Agile, Inc.",
+        "institutionSite": "https://scaledagile.com/certification/safe-release-train-engineer/",
+        "location": "Online",
+        "date": "08/2026",
+        "certificate": "https://www.credly.com/badges/d49953bd-8782-44c4-896e-b99ea87318aa/public_url",
+        "description": "Certification validating the role of the Release Train Engineer (RTE) in a SAFe enterprise, including facilitation of large-scale events, optimization of delivery cycles and performance improvement.",
+        "skills": [
+          "Agile",
+          "SAFe",
+          "Release Train Engineer",
+          "Dependency management",
+          "Continuous improvement"
+        ]
+      },
+      {
         "title": "Professional Scrum Master II",
         "institution": "Scrum.org",
         "institutionSite": "https://www.scrum.org/assessments/professional-scrum-master-ii-certification",
